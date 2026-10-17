@@ -1,0 +1,17 @@
+population,feature,oot,train,status,pillar
+history,active_cash,0.0031494584652538684,0.0651623208621436,EXCLUDED: cash-loan holders passed stricter underwriting; IV unstable over time,Affordability
+history,apps_90d,0.021177660905910133,0.05035687356048063,candidate,Credit seeking
+history,down_payment,0.03189141461222711,0.016791360175564946,candidate,Affordability
+history,due_recency,0.1798114878790537,0.44164255907193,"EXCLUDED: duplicates repay_state (cured vs not cured) with a weaker, less stable signal",Repayment
+history,income,0.0023596970563690917,0.014502353907584928,candidate,Affordability
+history,max_clean_credit,0.05566233540373617,0.11759003759762435,candidate,Proven capacity
+history,n_active,0.0012253837441613155,0.01917032757686655,EXCLUDED: looks protective only because the label sees instalments 1-4 and the lender tops up trusted clients; collection calls after T rise with the number of live loans (selection effect),Affordability
+history,pti,0.0071117722267249,0.01043375600894015,candidate,Affordability
+history,recency,0.015132437689080172,0.06621254014388996,candidate,Stability
+history,rejected_12m,0.02209604297236968,0.009655487793563762,EXCLUDED: the lender's own past decision (circular); weak and unstable,Credit seeking
+history,repay_state,0.2149433780512754,0.49446064977534704,candidate,Repayment
+history,scoring_90d,0.014929482924714733,0.002389959182682452,EXCLUDED: direction flips between train (protective) and out-of-time (risky),Credit seeking
+history,tenure,0.04611153401032555,0.046748453788360275,candidate,Stability
+thin,apps_90d,0.003945483059169936,0.001955087476597282,candidate,Credit seeking
+thin,scoring_90d,0.02144190904944546,0.0047116778108856625,candidate,Credit seeking
+thin,unsigned_apps,0.013173507698538494,0.016830044261890675,candidate,Credit seeking

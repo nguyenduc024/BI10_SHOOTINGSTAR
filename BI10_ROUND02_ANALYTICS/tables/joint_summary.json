@@ -1,0 +1,13 @@
+{
+  "customers": 1000528,
+  "delivered_sales_offers_after_T": 131318,
+  "offers_to_live_arrears_distressed_or_E": 2034,
+  "customers_live_arrears_distressed_or_E_offered": 1545,
+  "live_arrears_offered_share": 0.1068,
+  "healthy_offered_share": 0.1214,
+  "live_arrears_conversions": 69,
+  "healthy_and_engaged_customers": 174351,
+  "healthy_and_engaged_not_called_after_T": 74089,
+  "fhs_ces_rank_correlation": 0.1571,
+  "share_of_offers_to_risky": 0.0155
+}

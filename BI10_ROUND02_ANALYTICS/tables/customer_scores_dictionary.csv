@@ -1,0 +1,24 @@
+column,meaning
+SKP_CLIENT,Customer id
+fhs_score,"Financial Health Score 0-100 at 2025-06-05 = structural points + live points, clipped"
+fhs_band,A Thriving (75+) / B Healthy (65-75) / C Stable (55-65) / D Fragile (40-55) / E Stressed (<40)
+fhs_segment,Distressed > Live arrears > New to credit > Over-extended > band name
+fhs_structural_score,Scorecard points from credit history (validated out of time on 2024 data)
+fhs_live_points,"Points from current status: collection contact Jan-Jun 2025, affordability flag (validated on 2026 calls)"
+fhs_expected_stress_rate,Out-of-time early-stress rate of the band
+fhs_thin_file,1 = no signed contract before T; score is provisional
+fhs_pillar_*,Position 0 (worst) - 100 (best) within each pillar; empty if the pillar does not apply
+repay_state,Repayment history state at T
+live_loans,Loans active at T
+instalment_to_income,Monthly instalments of live instalment loans / latest declared income
+affordability_flag,Instalment-to-income >= 50% or 3+ live loans
+collection_calls_before_T,"Calls coded as collection, Jan-Jun 2025"
+fhs_reason_*,"Factors furthest above (pos) / below (neg) the average customer, >= 1 point"
+ces_score,Customer Engagement Score 0-100 at 2025-06-05 (customer-initiated activity only)
+ces_tier,Passive (<35) / Warm (35-45) / Engaged (45-60) / Highly engaged (60+)
+ces_segment,"Unreachable (5+ calls in 2025, never answered) or the tier"
+ces_recency..ces_product,Component scores 0-100 (weights 35/25/15/10/15)
+days_since_touch,Days since the last customer-initiated touch
+active_days_12m,Distinct days with a customer-initiated touch in the last 12 months
+ces_reason_pos / ces_reason_neg,Component that adds / removes the most versus the average customer
+health_engagement_cell,"FHS band x CES tier, the starting grid for segmentation and next best action"

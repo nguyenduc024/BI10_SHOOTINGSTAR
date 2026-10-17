@@ -1,0 +1,253 @@
+OUTCOME_GROUP,RESPONSE,calls,inbound_share
+collection,OWNMessageLeftRPC,14109,0.018
+collection,ppSimple,13017,0.03
+collection,OWNPTPConfirmed,10299,0.0
+collection,OWNAgreement,7833,0.011
+collection,OWNVoluntaryPayment,7469,0.016
+collection,OWNRefuseToLeaveMsg,6015,0.008
+collection,ResultAskRecallRpcRestrict,2129,0.0
+collection,OWNVoluntaryPaymentBA,1152,0.0
+collection,OWNVoluntaryPaymentST,1058,0.0
+collection,OWNReconfirmExemptionSMS,733,0.0
+collection,OWNPaymentPromiseBA,621,0.002
+collection,OWNPTPBroken,569,0.0
+collection,OWNOthers,441,0.0
+collection,OWNPartAgree,301,0.0
+collection,OWNExemptionPTP,293,0.041
+collection,OWNRefuseToPay,275,0.015
+collection,OWNPaymentPromiseST,261,0.0
+collection,Chuyen_Collection_I,233,1.0
+collection,OWNNoNewContactFoundRPC,233,0.0
+collection,OWNAlreadyPaid,177,0.0
+collection,OWNStopCallingEmergencyContact,121,0.008
+collection,OWNNoMistakeRPC,67,0.0
+collection,Yeu_cau_mien_giam/gia_han_I,21,1.0
+collection,OWNCollectionSupport,17,0.118
+collection,ICre_Transfer to Collection,16,1.0
+collection,Collection_C,14,1.0
+collection,OWNAgreePaymentSupport,14,0.429
+collection,OWNNewRPCContactFoundRPC,12,0.0
+collection,OWNUnresolved,9,0.0
+collection,OWNMistakeSuspiciousRPC,8,0.0
+collection,OWNLRESDeclined,6,0.0
+collection,OWNResolved,4,0.0
+collection,DoesNotCollaborate,2,1.0
+collection,OWNAlreadyPaidVB,2,1.0
+collection,OWNFraudSuspicious,2,0.0
+collection,OWNSkiptracing,2,0.0
+collection,ICre_Yeu_cau_mien_ giam/gia_h���n,1,1.0
+collection,OWNRefusePaymentSupport,1,0.0
+no_contact,none,3416653,0.029
+no_contact,No_Answer,79469,0.014
+no_contact,Client busy,62020,0.008
+no_contact,OWNCallDisconnectedRPC,10023,0.021
+no_contact,OWNCallDisconnectedNonRPC,8411,0.004
+no_contact,OWNNotAvailableRPC,529,0.0
+no_contact,OWNNotReachManual,387,0.0
+no_contact,OWNAnswerMachineNonRPC,346,0.0
+no_contact,No answer Retention,224,0.866
+no_contact,Drop_call_I,163,1.0
+no_contact,OWNNotAvailableNonRPC,108,0.0
+no_contact,CallDisconnected,96,1.0
+no_contact,ICre_Drop,55,1.0
+no_contact,OWNAnswerMachineRPC,22,0.0
+no_contact,No response,8,0.0
+no_contact,DE_DROP,7,1.0
+no_contact,OWNClientHungUp,3,0.0
+other,Survey_MKT,5034,0.0
+other,Other,2346,0.0
+other,IS_SAI_MSIG,1241,0.0
+other,Survey_Other,940,0.0
+other,OB_Giao nhan the,880,0.0
+other,MRC_Missing CT,535,0.0
+other,Support after application,378,0.0
+other,S2S,319,0.0
+other,FollowUp_Feedback_HAPP,261,0.0
+other,CA_Survey,224,0.0
+other,Other 2,130,0.0
+other,Transfer,118,0.0
+other,Other 1,110,0.0
+other,Non-resolve,65,0.0
+other,MRC,64,0.0
+other,OB_Cuoc_goi_ra,56,0.0
+other,OB_Card Support information,42,0.0
+other,OB_S2S,38,0.0
+other,OB_Primary Phone,35,0.0
+other,Ask fer information,11,0.0
+other,CA_MDM_Confirmation_Phone,10,0.0
+other,Follow_Up_Feedback_IVR,9,0.0
+other,OB_Card delivery,5,0.0
+other,Others,5,0.0
+other,Dont know how to use,4,0.0
+other,OB_Card Video KYC,2,0.0
+other,DE_OB_S2S,1,0.0
+other,Follow_Up_Feedback_HAPP,1,0.0
+retention,Termination,3413,0.98
+retention,OB_Insurance Retention,1959,0.0
+retention,Insurance_Retention_I,1119,1.0
+retention,Agree retention with voucher,931,0.933
+retention,Cash_Retention_I,633,1.0
+retention,Thanh_ly_da_tinh_tien_I,561,1.0
+retention,BNPL_ICre_Huy hop dong,529,1.0
+retention,Bao_hiem_Thanh_ly_huy_I,358,1.0
+retention,ICre_Card retention/ Duy tri the,349,0.997
+retention,ICre_Cham dut/Huy cham dut HD the,229,1.0
+retention,Not eligible for termination,197,0.99
+retention,Agree retention,171,0.988
+retention,Agree retention without voucher,170,0.947
+retention,Thanh_ly_hoi_thong_tin_I,146,1.0
+retention,Termination Non Eligible Offer,132,0.985
+retention,BNPL_ICre_Thanh ly hop dong,109,0.991
+retention,Huy_Hop_dong_I,98,1.0
+retention,Thanh_ly_ET_Follow_Up,85,0.0
+retention,Disagree termination,72,1.0
+retention,Card Retention_OB,1,0.0
+sales_conversion,Sign successful,1550,0.091
+sales_conversion,Made_App_Successful,1241,0.106
+sales_conversion,Transfer for signing,841,0.174
+sales_conversion,Send_to_SA,474,0.063
+sales_conversion,Client agrees,288,0.01
+sales_conversion,Sign Agree,97,0.103
+sales_conversion,Transfer for sales,30,0.0
+sales_conversion,Transfer to Sale,9,0.111
+sales_conversion,Signed already,4,0.0
+sales_conversion,Appointment with SA,1,0.0
+sales_conversion,Push Sign,1,0.0
+sales_decline,Refuse,164279,0.002
+sales_decline,Wrong product,600,0.945
+sales_decline,Do Not Call,418,0.014
+sales_decline,Sign refuse,387,0.008
+sales_decline,DE_Cancel application,345,0.997
+sales_decline,No need of using card,66,0.015
+sales_decline,Ngung_nhan_quang_cao_moi_vay_I,43,1.0
+sales_decline,ICre_Ngung_nhan_quang_cao_moi_vay,3,1.0
+sales_decline,Low credit limit,1,0.0
+sales_decline,Ngung_nhan_quang_cao_moi_vay_C,1,1.0
+sales_decline,No longer in need,1,0.0
+sales_ineligible,Not eligible,5665,0.148
+sales_interest,More consultation,10848,0.036
+sales_interest,AskRecall,9598,0.001
+sales_interest,Dropped_OTP,2021,0.022
+sales_interest,Pending,1348,0.074
+sales_interest,Client considers,241,0.365
+sales_interest,CallBack,26,0.923
+sales_interest,Ask to call back,5,0.0
+service,Thong_tin_thanh_toan_I,803,1.0
+service,AllRight,613,1.0
+service,Chuyen_Credit_Card_I,580,1.0
+service,ICre_Thanh toan,566,0.981
+service,Ask fer information,550,1.0
+service,Thong_tin_khac_I,443,1.0
+service,Pro_Cash_loan_I,407,1.0
+service,ICre_Lich su giao dich,397,0.975
+service,Other,377,1.0
+service,ICre_Transfer to Inbound,374,0.997
+service,Transfer,357,1.0
+service,Chuyen_Sales_Support_DE_I,325,1.0
+service,Overpayment_I,310,1.0
+service,ICre_Khoa/ Mo khoa the,280,0.989
+service,Tinh_trang_Hop_dong_I,273,1.0
+service,ICre_Khac,259,0.865
+service,Chuyen_CS_I,233,1.0
+service,Support after application,173,1.0
+service,BNPL_ICre_Thong tin giao dich,168,1.0
+service,MRC_I,164,1.0
+service,ICre_Thay the the,156,0.994
+service,ICre_AEPP/EPP,145,0.993
+service,Ho_tro_thanh_toan,130,1.0
+service,ICre_San pham/ Khuyen mai,130,0.985
+service,ICre_Bao hiem,115,1.0
+service,ICre_Tinh hinh giao nhan the,115,1.0
+service,ICre_Lai suat,99,1.0
+service,Chuyen_TLS_I,91,1.0
+service,ICre_Transfer to CRE_OPS,90,1.0
+service,Cap_nhat_thong_tin_Khach_hang_I,85,1.0
+service,OB_Call Transfer Voicebot,81,1.0
+service,CIC_I,75,1.0
+service,ICre_Han muc giao dich,75,1.0
+service,ICre_Dieu chinh thong tin KH,69,1.0
+service,ICre_Pro_Cash_loan,68,0.971
+service,BNPL_ICre_Thanh toan,59,0.983
+service,ICre_Tao PIN/ ��oi PIN,51,1.0
+service,ICre_Kich hoat the,49,0.959
+service,BNPL_ICre_Khoa/Mo khoa tai khoan,44,0.955
+service,BNPL_ICre_Hoan tien du,41,1.0
+service,BNPL_ICre_San pham/khuyen mai,41,1.0
+service,ICre_Ho tro thanh toan,35,1.0
+service,Thong_tin_giai_ngan_I,32,1.0
+service,Bao_hiem_I,31,1.0
+service,Doi_kenh_giai_ngan_I,31,1.0
+service,Pro_CD_I,28,1.0
+service,Promotion_khac_I,28,1.0
+service,BNPL_ICre_Khac,26,1.0
+service,HAPP_Thong_tin_khac_I,24,1.0
+service,BNPL_ICre_Transfer to CS,20,1.0
+service,ICre_Pro_Credit card,20,1.0
+service,ICre_HAPP_Khac,18,1.0
+service,ICre_Tra soat giao dich,16,1.0
+service,ICre_��iem thuong,15,1.0
+service,Ky_HD_truc_tuyen_I,12,1.0
+service,BNPL_Ho tro thanh toan,10,1.0
+service,Gian_lan_C,10,1.0
+service,ICre_Giay xac nhan tat toan H�� the,10,1.0
+service,ICre_Hoan tien du,10,1.0
+service,TLS_C,10,1.0
+service,ICre_HAPP_Huong dan tinh nang ca nhan,9,1.0
+service,Thong_tin_ngan_I,8,1.0
+service,ICre_CIC,7,1.0
+service,ICre_Transfer to Telesale,7,1.0
+service,HAPP_Khong_nhan_ma_OTP_C,6,1.0
+service,SA_C,6,1.0
+service,Chuyen_CS_C,5,1.0
+service,ICre_HAPP_Tao mo khoa mat khau,5,1.0
+service,Pro_TW_I,4,1.0
+service,BNPL_ICre_CIC,3,1.0
+service,CCre_Lich su giao dich,3,1.0
+service,Client complaints,3,1.0
+service,FraudWC,3,1.0
+service,HAPP_Tao_mo_khoa_mat_khau_I,3,1.0
+service,ICre_Bat/Tat giao dich truc tuyen,3,1.0
+service,Khong_nhan_duoc_tien_C,3,1.0
+service,HAPP_Huong_dan_tin_nang_ca_nhan_I,2,1.0
+service,BNPL_CCre_Transfer to CS,1,1.0
+service,BNPL_ICre_Dieu chinh thong tin,1,1.0
+service,CDAllright_HPLAllright,1,1.0
+service,CDAllright_HPLCBack,1,1.0
+service,DE_Client call,1,1.0
+service,DE_Other,1,1.0
+service,HAPP_Loi_dang_nhap_C,1,1.0
+service,HAPP_Loi_tinh_nang_ca_nhan_C,1,1.0
+service,ICre_Gui lai sao ke,1,1.0
+service,Inquiry,1,1.0
+service,Khieu_nai_khac_C,1,1.0
+service,Kinh_doanh_truc_tuyen_I,1,1.0
+service,Mobile_App_I,1,1.0
+service,Survey_Other,1,1.0
+wrong_party,OWNUnidentifiedPersonNonRPC,45669,0.007
+wrong_party,OWNUnidentifiedPerson,43337,0.022
+wrong_party,Relative,9138,0.001
+wrong_party,OWNNoNewContactFoundNonRPC,5841,0.0
+wrong_party,CallBacknonRPC,5278,0.0
+wrong_party,OWNMessageLeftNonRPC,4843,0.018
+wrong_party,Wrong Phone,3594,0.013
+wrong_party,OWNWrongContactRPC,726,0.037
+wrong_party,OWNCheckWrongContactno,360,0.0
+wrong_party,OWNWrongContactNonRPC,174,0.0
+wrong_party,OWNWrongContactNonRPCNoFU,97,0.0
+wrong_party,ResultAskNonRPCRecallRestrict,97,0.0
+wrong_party,Wrong_phone_C,59,1.0
+wrong_party,Relatives,56,0.625
+wrong_party,OWNDeathSuspNonRPC,53,0.057
+wrong_party,OWNWrongContactRPCNoFU,33,0.0
+wrong_party,OWNWrongContactSTNonRPC,31,0.0
+wrong_party,OWNCheckWrongContactyes,17,0.0
+wrong_party,OWNNoMistakeNonRPC,12,0.0
+wrong_party,OWNWrongContactVBNonRPC,5,1.0
+wrong_party,ClientFamily,4,1.0
+wrong_party,OWNNewSpouseContactFound,4,0.0
+wrong_party,OWNOthersNonRPC,4,1.0
+wrong_party,OWNAlreadyPaidNonRPC,3,0.0
+wrong_party,OWNDifferentPerson,2,0.0
+wrong_party,OWNRefuseToPayNonRPC,1,1.0
+wrong_party,OWNWrongContactSTRPC,1,0.0
+wrong_party,OtherPerson,1,1.0

@@ -1,0 +1,164 @@
+{
+  "sampling_frame": {
+    "customers": 1000528,
+    "last_application_dec2024_jan2025_share": 0.8376
+  },
+  "backtest": {
+    "scoring_date": "2025-02-01",
+    "population": "applied in Dec-2024/Jan-2025 (in the file before D0)",
+    "customers": 1000528,
+    "applied_again": {
+      "n": 1000528,
+      "event_rate": 0.1624,
+      "auc": 0.644,
+      "gini": 0.288,
+      "ks": 0.2288,
+      "component_auc": {
+        "recency": 0.5036,
+        "frequency": 0.6619,
+        "interaction": 0.4605,
+        "lead": 0.5077,
+        "product": 0.6175
+      }
+    },
+    "signed_again": {
+      "n": 1000528,
+      "event_rate": 0.1098,
+      "auc": 0.6527,
+      "gini": 0.3053,
+      "ks": 0.235,
+      "component_auc": {
+        "recency": 0.4896,
+        "frequency": 0.6525,
+        "interaction": 0.4462,
+        "lead": 0.507,
+        "product": 0.6545
+      }
+    },
+    "benchmark_logistic_weights_in_sample": 0.6751,
+    "logistic_implied_weights": {
+      "recency": 0.0,
+      "frequency": 0.808,
+      "interaction": 0.012,
+      "lead": 0.0,
+      "product": 0.18
+    }
+  },
+  "future_calls": {
+    "window": "2025-06-05 .. 2026-08-31",
+    "called_customers": 346109,
+    "reached": {
+      "rate": 0.3737,
+      "auc": 0.5313,
+      "auc_call_volume_adjusted": 0.5282,
+      "component_auc": {
+        "recency": 0.5132,
+        "frequency": 0.5115,
+        "interaction": 0.6608,
+        "lead": 0.4978,
+        "product": 0.5027
+      }
+    },
+    "interested": {
+      "rate": 0.034,
+      "auc": 0.68,
+      "auc_call_volume_adjusted": 0.6528,
+      "component_auc": {
+        "recency": 0.6386,
+        "frequency": 0.6537,
+        "interaction": 0.6397,
+        "lead": 0.5081,
+        "product": 0.5693
+      }
+    },
+    "converted": {
+      "rate": 0.0063,
+      "auc": 0.7594,
+      "auc_call_volume_adjusted": 0.7502,
+      "component_auc": {
+        "recency": 0.7076,
+        "frequency": 0.7174,
+        "interaction": 0.7371,
+        "lead": 0.5013,
+        "product": 0.5945
+      }
+    },
+    "top_30pct_by_ces": {
+      "share_of_called_customers": 0.3,
+      "share_of_outbound_calls": 0.3626,
+      "share_of_interested_customers": 0.558,
+      "share_of_conversions": 0.7063
+    },
+    "top_50pct_by_ces": {
+      "share_of_called_customers": 0.5,
+      "share_of_outbound_calls": 0.5572,
+      "share_of_interested_customers": 0.7407,
+      "share_of_conversions": 0.841
+    }
+  },
+  "app_usage": {
+    "auc_app_user": 0.616
+  },
+  "call_operations": {
+    "outbound_calls": 3875171,
+    "calls_to_never_reached_after_10_failures": 802263,
+    "rpc_rate_after_10_failures": 0.0144,
+    "rpc_rate_first_attempt": 0.139,
+    "best_hours": [
+      {
+        "hour": 7,
+        "rpc_rate": 0.1079
+      },
+      {
+        "hour": 17,
+        "rpc_rate": 0.0988
+      },
+      {
+        "hour": 9,
+        "rpc_rate": 0.0977
+      }
+    ],
+    "worst_hours": [
+      {
+        "hour": 19,
+        "rpc_rate": 0.0134
+      },
+      {
+        "hour": 18,
+        "rpc_rate": 0.0247
+      },
+      {
+        "hour": 16,
+        "rpc_rate": 0.042
+      }
+    ],
+    "share_of_calls_wasted": 0.207,
+    "rpc_lost_if_capped_at_10": 11579
+  },
+  "weights": {
+    "recency": 0.35,
+    "frequency": 0.25,
+    "interaction": 0.15,
+    "lead": 0.1,
+    "product": 0.15
+  },
+  "scaling": {
+    "cap_active_days": 8.0,
+    "cap_leads": 2.0,
+    "rpc_prior": 0.0685339569751755,
+    "rpc_cap": 0.2237782974793129
+  },
+  "sensitivity": {
+    "recency_heavier": {
+      "rank_corr_with_primary": 0.9968,
+      "future_interest_auc": 0.6698
+    },
+    "equal_weights": {
+      "rank_corr_with_primary": 0.9854,
+      "future_interest_auc": 0.6827
+    },
+    "primary": {
+      "future_interest_auc": 0.68
+    }
+  }
+}

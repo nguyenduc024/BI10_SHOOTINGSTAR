@@ -1,0 +1,222 @@
+scaling parameters: {'cap_active_days': 8.0, 'cap_leads': 2.0, 'rpc_prior': 0.0685339569751755, 'rpc_cap': 0.2237782974793129}
+score at T: {'count': 1000528.0, 'mean': 40.05, 'std': 14.71, 'min': 18.6, '10%': 25.53, '25%': 28.64, '50%': 34.24, '75%': 47.98, '90%': 64.01, 'max': 99.47}
+customer-initiated touches, last 12 months:
+                        kind  touches  customers
+self-service / store scoring  2466600     365636
+          credit application  1749216    1000528
+     lead created / accepted    65437      55949
+                inbound call    31899      23418
+    interest on a sales call     7060       5449
+sampling frame (month of last application):
+last_application_month  customers  share
+               2024-12     370525 0.3703
+               2025-01     467518 0.4673
+               2025-02      25514 0.0255
+               2025-03      34677 0.0347
+               2025-04      45382 0.0454
+               2025-05      49756 0.0497
+               2025-06       7156 0.0072
+back-test: {
+ "scoring_date": "2025-02-01",
+ "population": "applied in Dec-2024/Jan-2025 (in the file before D0)",
+ "customers": 1000528,
+ "applied_again": {
+  "n": 1000528,
+  "event_rate": 0.1624,
+  "auc": 0.644,
+  "gini": 0.288,
+  "ks": 0.2288,
+  "component_auc": {
+   "recency": 0.5036,
+   "frequency": 0.6619,
+   "interaction": 0.4605,
+   "lead": 0.5077,
+   "product": 0.6175
+  }
+ },
+ "signed_again": {
+  "n": 1000528,
+  "event_rate": 0.1098,
+  "auc": 0.6527,
+  "gini": 0.3053,
+  "ks": 0.235,
+  "component_auc": {
+   "recency": 0.4896,
+   "frequency": 0.6525,
+   "interaction": 0.4462,
+   "lead": 0.507,
+   "product": 0.6545
+  }
+ },
+ "benchmark_logistic_weights_in_sample": 0.6751,
+ "logistic_implied_weights": {
+  "recency": 0.0,
+  "frequency": 0.808,
+  "interaction": 0.012,
+  "lead": 0.0,
+  "product": 0.18
+ }
+}
+future calls: {
+ "window": "2025-06-05 .. 2026-08-31",
+ "called_customers": 346109,
+ "reached": {
+  "rate": 0.3737,
+  "auc": 0.5313,
+  "auc_call_volume_adjusted": 0.5282,
+  "component_auc": {
+   "recency": 0.5132,
+   "frequency": 0.5115,
+   "interaction": 0.6608,
+   "lead": 0.4978,
+   "product": 0.5027
+  }
+ },
+ "interested": {
+  "rate": 0.034,
+  "auc": 0.68,
+  "auc_call_volume_adjusted": 0.6528,
+  "component_auc": {
+   "recency": 0.6386,
+   "frequency": 0.6537,
+   "interaction": 0.6397,
+   "lead": 0.5081,
+   "product": 0.5693
+  }
+ },
+ "converted": {
+  "rate": 0.0063,
+  "auc": 0.7594,
+  "auc_call_volume_adjusted": 0.7502,
+  "component_auc": {
+   "recency": 0.7076,
+   "frequency": 0.7174,
+   "interaction": 0.7371,
+   "lead": 0.5013,
+   "product": 0.5945
+  }
+ }
+}
+ decile  customers  score_min  score_max  outbound_calls  rpc_rate  reached  interested  converted  positive_calls  lift_interested
+      1      34611      18.60      28.80          261348    0.1252   0.3308      0.0174     0.0017             786           0.5109
+      2      34611      28.80      31.71          266395    0.1145   0.3305      0.0151     0.0016             718           0.4430
+      3      34611      31.71      34.05          231159    0.1516   0.3763      0.0148     0.0017             679           0.4346
+      4      34611      34.05      37.69          255858    0.1391   0.3624      0.0191     0.0027             944           0.5610
+      5      34611      37.69      41.87          262676    0.1365   0.3726      0.0219     0.0023            1046           0.6434
+      6      34610      41.87      46.82          270771    0.1353   0.3766      0.0277     0.0034            1431           0.8148
+      7      34611      46.82      53.52          290597    0.1353   0.3830      0.0345     0.0050            1835           1.0126
+      8      34611      53.52      60.75          310168    0.1366   0.3883      0.0413     0.0087            2498           1.2137
+      9      34611      60.75      69.10          342607    0.1332   0.3926      0.0527     0.0109            3300           1.5490
+     10      34611      69.10      99.47          393280    0.1473   0.4236      0.0959     0.0248            8021           2.8170
+targeting: {
+ "top_30pct_by_ces": {
+  "share_of_called_customers": 0.3,
+  "share_of_outbound_calls": 0.3626,
+  "share_of_interested_customers": 0.558,
+  "share_of_conversions": 0.7063
+ },
+ "top_50pct_by_ces": {
+  "share_of_called_customers": 0.5,
+  "share_of_outbound_calls": 0.5572,
+  "share_of_interested_customers": 0.7407,
+  "share_of_conversions": 0.841
+ }
+}
+app usage check:
+score_band  customers  app_users  sessions_per_week
+      5-20         12     0.0000             0.0000
+     20-40     639394     0.0586             0.0285
+     40-60     227201     0.0910             0.0851
+       60+     133921     0.0919             0.1736
+call operations: {
+ "outbound_calls": 3875171,
+ "calls_to_never_reached_after_10_failures": 802263,
+ "rpc_rate_after_10_failures": 0.0144,
+ "rpc_rate_first_attempt": 0.139,
+ "best_hours": [
+  {
+   "hour": 7,
+   "rpc_rate": 0.1079
+  },
+  {
+   "hour": 17,
+   "rpc_rate": 0.0988
+  },
+  {
+   "hour": 9,
+   "rpc_rate": 0.0977
+  }
+ ],
+ "worst_hours": [
+  {
+   "hour": 19,
+   "rpc_rate": 0.0134
+  },
+  {
+   "hour": 18,
+   "rpc_rate": 0.0247
+  },
+  {
+   "hour": 16,
+   "rpc_rate": 0.042
+  }
+ ],
+ "share_of_calls_wasted": 0.207,
+ "rpc_lost_if_capped_at_10": 11579
+}
+lead sources:
+ LEAD_SOURCE  SELF_INITIATED   leads  customers  deal_rate  not_interested_rate
+          RA           False 1124219     470234     0.0021               0.5949
+          SA           False  858825     419608     0.0193               0.6326
+         TLS           False   42731      31535     0.3709               0.2215
+         SOB            True   38423      31876     0.4040               0.1747
+         GMA            True   25461      19877     0.1107               0.4967
+LANDING PAGE            True    9612       8525     0.3827               0.3218
+        RTDM           False    5371       3139     0.1485               0.3618
+future outcomes by tier:
+                called_after_T  reached  interested  converted
+ces_tier                                                      
+Passive                 113510   0.3497      0.0160     0.0018
+Warm                     83478   0.3682      0.0226     0.0027
+Engaged                  76415   0.3827      0.0361     0.0062
+Highly engaged           72706   0.4080      0.0732     0.0176
+segments:
+   ces_segment  customers  avg_score  median_days_since_touch  avg_active_days_12m  share  called_after_T  reached_after_T  interested_after_T  converted_after_T
+       Engaged     139445    52.1855                     78.0               3.3048 0.1394           66491           0.4094              0.0356             0.0066
+Highly engaged     121934    69.6606                     21.0               8.3544 0.1219           60719           0.4496              0.0791             0.0205
+       Passive     518309    29.3611                    154.0               1.0928 0.5180          101528           0.3661              0.0139             0.0018
+   Unreachable      42635    48.0960                    128.0               4.4474 0.0426           42633           0.2046              0.0383             0.0026
+          Warm     178205    39.4457                    144.0               1.8820 0.1781           74738           0.3870              0.0210             0.0027
+drivers:
+                          factor                        level  customers  interested  reached  interest_lift  reach_lift
+             Last customer touch                   31-90 days      60089       0.051    0.392          1.509       1.050
+             Last customer touch                  91-365 days     231981       0.023    0.366          0.662       0.978
+             Last customer touch                    <=30 days      54039       0.064    0.388          1.883       1.038
+                 Last touch type           credit application     263016       0.024    0.371          0.697       0.992
+                 Last touch type                 inbound call      14080       0.086    0.479          2.514       1.283
+                 Last touch type     interest on a sales call       3266       0.565    0.829         16.604       2.218
+                 Last touch type      lead created / accepted       3105       0.048    0.379          1.410       1.014
+                 Last touch type self-service / store scoring      62642       0.037    0.339          1.096       0.907
+  Product families touched (12m)                            1     132534       0.021    0.370          0.621       0.989
+  Product families touched (12m)                            2      67512       0.040    0.391          1.183       1.047
+  Product families touched (12m)                           3+     145831       0.043    0.369          1.260       0.988
+Reached by phone before T (2025)        called, never reached     235743       0.020    0.292          0.592       0.782
+Reached by phone before T (2025)                   not called      59646       0.016    0.572          0.467       1.530
+Reached by phone before T (2025)                          yes      50720       0.120    0.520          3.523       1.391
+      Uses the mobile app (2025)                           no     313810       0.034    0.373          0.998       0.999
+      Uses the mobile app (2025)                          yes      32299       0.035    0.377          1.021       1.009
+               First lead source                          GMA       4546       0.052    0.348          1.531       0.930
+               First lead source                 LANDING PAGE       3451       0.062    0.390          1.830       1.045
+               First lead source                           RA     172707       0.031    0.383          0.897       1.024
+               First lead source                         RTDM       1500       0.027    0.391          0.783       1.047
+               First lead source                           SA      79102       0.031    0.364          0.922       0.974
+               First lead source                          SOB       9233       0.029    0.336          0.840       0.899
+               First lead source                          TLS      10651       0.067    0.416          1.966       1.114
+               First lead source                      no lead      64919       0.039    0.361          1.157       0.965
+               Repayment history   Clean, 1-2 loans completed     118561       0.032    0.370          0.943       0.991
+               Repayment history    Clean, 3+ loans completed     144537       0.039    0.392          1.160       1.050
+               Repayment history Clean, no loan completed yet      63761       0.025    0.354          0.723       0.947
+               Repayment history           No signed contract      10264       0.031    0.338          0.924       0.906
+               Repayment history              Past due, cured       6383       0.050    0.362          1.459       0.969
+               Repayment history          Past due, not cured       2523       0.024    0.143          0.710       0.383
+done in 62s

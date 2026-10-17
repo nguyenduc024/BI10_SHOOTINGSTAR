@@ -1,0 +1,199 @@
+{
+  "scale": {
+    "pdo": 10.0,
+    "anchor": "2% stress probability = 60 points"
+  },
+  "train_in_time": {
+    "n": 557190,
+    "event_rate": 0.013,
+    "auc": 0.6788,
+    "gini": 0.3577,
+    "ks": 0.2551
+  },
+  "oot": {
+    "n": 727865,
+    "event_rate": 0.0316,
+    "auc": 0.6288,
+    "gini": 0.2576,
+    "ks": 0.223
+  },
+  "oot_history_only": {
+    "n": 490105,
+    "event_rate": 0.0237,
+    "auc": 0.6114,
+    "gini": 0.2229,
+    "ks": 0.1573
+  },
+  "oot_thin_only": {
+    "n": 237760,
+    "event_rate": 0.0478,
+    "auc": 0.526,
+    "gini": 0.052,
+    "ks": 0.0516
+  },
+  "dropped_features": {
+    "history": {
+      "pti": "coefficient sign contradicts univariate WoE (collinear with stronger features)"
+    },
+    "thin_file": {},
+    "excluded_by_design": {
+      "n_active": "looks protective only because the label sees instalments 1-4 and the lender tops up trusted clients; collection calls after T rise with the number of live loans (selection effect)",
+      "active_cash": "cash-loan holders passed stricter underwriting; IV unstable over time",
+      "scoring_90d": "direction flips between train (protective) and out-of-time (risky)",
+      "rejected_12m": "the lender's own past decision (circular); weak and unstable",
+      "due_recency": "duplicates repay_state (cured vs not cured) with a weaker, less stable signal"
+    }
+  },
+  "benchmark_repay_state_only": {
+    "n": 490105,
+    "event_rate": 0.0237,
+    "auc": 0.5997,
+    "gini": 0.1993,
+    "ks": 0.1309
+  },
+  "benchmark_gbm_same_features_history": {
+    "n": 490105,
+    "event_rate": 0.0237,
+    "auc": 0.6125,
+    "gini": 0.2249,
+    "ks": 0.1646
+  },
+  "oot_subgroups": {
+    "tet_wave_contracts": {
+      "n": 652244,
+      "event_rate": 0.0312,
+      "auc": 0.6211,
+      "gini": 0.2423,
+      "ks": 0.2133
+    },
+    "non_tet_contracts": {
+      "n": 75621,
+      "event_rate": 0.0344,
+      "auc": 0.6855,
+      "gini": 0.371,
+      "ks": 0.3085
+    },
+    "new_product_BNPL": {
+      "n": 64278,
+      "event_rate": 0.0269,
+      "auc": 0.6167,
+      "gini": 0.2334,
+      "ks": 0.1925
+    },
+    "new_product_CC": {
+      "n": 20255,
+      "event_rate": 0.0296,
+      "auc": 0.5228,
+      "gini": 0.0455,
+      "ks": 0.059
+    },
+    "new_product_CD": {
+      "n": 480151,
+      "event_rate": 0.0311,
+      "auc": 0.6386,
+      "gini": 0.2772,
+      "ks": 0.2328
+    },
+    "new_product_CL": {
+      "n": 84511,
+      "event_rate": 0.0271,
+      "auc": 0.5485,
+      "gini": 0.0969,
+      "ks": 0.075
+    },
+    "new_product_CW": {
+      "n": 4119,
+      "event_rate": 0.0483,
+      "auc": 0.5019,
+      "gini": 0.0038,
+      "ks": 0.0162
+    },
+    "new_product_TW": {
+      "n": 33846,
+      "event_rate": 0.0683,
+      "auc": 0.5738,
+      "gini": 0.1477,
+      "ks": 0.1396
+    }
+  },
+  "weight_perturbation_25pct_history": {
+    "auc_min": 0.6082,
+    "auc_max": 0.6128,
+    "rank_corr_min": 0.9851,
+    "rank_corr_median": 0.9965
+  },
+  "live_layer": {
+    "live_points": {
+      "ew": {
+        "0": 0.0,
+        "1": -32.6,
+        "2-3": -46.4,
+        "4+": -67.5
+      },
+      "affordability": -4.4
+    },
+    "live_logit_coefficients": {
+      "ew_1": 2.2582,
+      "ew_2-3": 3.2155,
+      "ew_4+": 4.6777,
+      "call_volume_16-30": 2.6805,
+      "call_volume_2-3": 0.1422,
+      "call_volume_31+": 2.9257,
+      "call_volume_4-7": 0.3099,
+      "call_volume_8-15": 1.9865,
+      "affordability": 0.3061
+    },
+    "fit_window": {
+      "customers": 318493,
+      "collection_rate": 0.0465,
+      "structural_only": 0.475,
+      "final_fhs": 0.6604,
+      "structural_only_volume_adjusted": 0.4682,
+      "final_fhs_volume_adjusted": 0.5796,
+      "collection_rate_by_ew": {
+        "0": 0.0309,
+        "1": 0.3777,
+        "2-3": 0.7144,
+        "4+": 0.9542
+      },
+      "collection_rate_by_affordability": {
+        "0": 0.0429,
+        "1": 0.0835
+      }
+    },
+    "validation_window": {
+      "customers": 326505,
+      "collection_rate": 0.0498,
+      "structural_only": 0.4741,
+      "final_fhs": 0.6698,
+      "structural_only_volume_adjusted": 0.4682,
+      "final_fhs_volume_adjusted": 0.5935,
+      "collection_rate_by_ew": {
+        "0": 0.0321,
+        "1": 0.3838,
+        "2-3": 0.6949,
+        "4+": 0.9499
+      },
+      "collection_rate_by_affordability": {
+        "0": 0.046,
+        "1": 0.0886
+      }
+    }
+  },
+  "affordability_tradeoff_on_oot_label": {
+    "structural": 0.6288,
+    "structural_plus_affordability_points": 0.6277
+  },
+  "psi": {
+    "train_vs_oot": 0.0744,
+    "train_vs_production_live_exposure_structural": 0.0388,
+    "train_vs_production_all_customers_structural": 0.2276,
+    "note": "all-customer PSI compares different populations (incl. dormant and thin-file customers)"
+  },
+  "production": {
+    "customers": 1000528,
+    "with_live_points": 59703,
+    "collection_contact_before_T": 11881,
+    "affordability_flag": 49772
+  }
+}

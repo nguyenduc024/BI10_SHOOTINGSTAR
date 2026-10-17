@@ -1,0 +1,24 @@
+period,product,borrower,contracts,early_stress_rate
+Before (Jul-24 to Nov-24),BNPL,First loan,921,0.04451682953311618
+Before (Jul-24 to Nov-24),BNPL,Repeat loan,14007,0.018562147497679732
+Before (Jul-24 to Nov-24),CC,First loan,135,0.037037037037037035
+Before (Jul-24 to Nov-24),CC,Repeat loan,8089,0.018420076647298802
+Before (Jul-24 to Nov-24),CD,First loan,21741,0.03182926268340923
+Before (Jul-24 to Nov-24),CD,Repeat loan,75307,0.015177871910977732
+Before (Jul-24 to Nov-24),CL,First loan,1,0.0
+Before (Jul-24 to Nov-24),CL,Repeat loan,31073,0.010781063946191227
+Before (Jul-24 to Nov-24),CW,First loan,315,0.047619047619047616
+Before (Jul-24 to Nov-24),TW,First loan,1190,0.06470588235294118
+Before (Jul-24 to Nov-24),TW,Repeat loan,2242,0.02631578947368421
+Tet wave (Dec-24 to Jan-25),BNPL,First loan,25300,0.03162055335968379
+Tet wave (Dec-24 to Jan-25),BNPL,Repeat loan,111750,0.019355704697986576
+Tet wave (Dec-24 to Jan-25),CC,First loan,490,0.014285714285714285
+Tet wave (Dec-24 to Jan-25),CC,Repeat loan,25963,0.028848746292801295
+Tet wave (Dec-24 to Jan-25),CD,First loan,163339,0.041955687251666776
+Tet wave (Dec-24 to Jan-25),CD,Repeat loan,303143,0.018829397347126603
+Tet wave (Dec-24 to Jan-25),CL,First loan,4,0.0
+Tet wave (Dec-24 to Jan-25),CL,Repeat loan,88455,0.025617545644678084
+Tet wave (Dec-24 to Jan-25),CW,First loan,3803,0.0468051538259269
+Tet wave (Dec-24 to Jan-25),CW,Repeat loan,1,0.0
+Tet wave (Dec-24 to Jan-25),TW,First loan,20521,0.07465523122654841
+Tet wave (Dec-24 to Jan-25),TW,Repeat loan,12886,0.03530963836722024

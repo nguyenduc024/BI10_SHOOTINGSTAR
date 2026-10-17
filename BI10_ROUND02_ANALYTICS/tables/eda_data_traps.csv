@@ -1,0 +1,8 @@
+trap,affected,base,fix,impact_if_ignored,share
+Contract rows repeated (2x or 8x per credit case),1953716,6234093,one row per SKP_CREDIT_CASE,every count and amount inflated x1.456,0.3133921807069609
+"Income 0 on the repeated copies (placeholder, not zero income)",1953406,4280377,keep the positive income of the case; 1M-200M VND/month valid,"306k customers wrongly treated as ""income unknown""",0.45636307269196147
+"Calls with no outcome code (dialled, not reached)",3578524,4000000,outcome taxonomy: no contact / wrong party / sales / collection / service,dialling counted as customer engagement,0.894631
+Lead accepted date = 3000-01-01 (documented SOB sentinel),587914,2143891,null + flag,acceptance delays of ~975 years,0.2742275610093983
+Signed contracts without sign time (pre-2017),218712,4280377,fall back to approval / application time,old history dropped from tenure and repayment,0.051096433795434375
+Exact duplicate lead rows,39249,2143891,dropped,lead activity overstated,0.018307367305520662
+"Income outside 1M-200M VND/month (e.g. 9,000,000,000)",377,4280377,set to missing,instalment-to-income near 0,8.807635402208731e-05

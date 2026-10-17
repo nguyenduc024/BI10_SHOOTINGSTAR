@@ -1,0 +1,9 @@
+ew,customers,collection_rate,window
+0,307419,0.03093172510482436,fit: Jan-Jun 2025 -> Jun-Dec 2025
+1,8112,0.3777120315581854,fit: Jan-Jun 2025 -> Jun-Dec 2025
+2-3,2416,0.7144039735099338,fit: Jan-Jun 2025 -> Jun-Dec 2025
+4+,546,0.9542124542124543,fit: Jan-Jun 2025 -> Jun-Dec 2025
+0,313821,0.03205011774227984,validation: Jul-Dec 2025 -> Jan-Aug 2026
+1,9027,0.38384845463609174,validation: Jul-Dec 2025 -> Jan-Aug 2026
+2-3,2858,0.6948915325402379,validation: Jul-Dec 2025 -> Jan-Aug 2026
+4+,799,0.9499374217772215,validation: Jul-Dec 2025 -> Jan-Aug 2026

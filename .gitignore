@@ -1,0 +1,15 @@
+# raw data (distributed by the organiser; not redistributed here)
+BI10_ROUND02_DATASET/
+*.csv.gz
+
+# event-level data model: rebuilt by BI10_full_analysis.py (contract_cases.parquet exceeds the GitHub 100 MB limit)
+data_model/*.parquet
+data_clean.partial.parquet
+
+# large or intermediate outputs: rebuilt by BI10_full_analysis.py
+BI10_ROUND02_ANALYTICS/outputs/customer_scores.csv
+BI10_ROUND02_ANALYTICS/outputs/fhs_*.parquet
+BI10_ROUND02_ANALYTICS/outputs/ces_scores.parquet
+
+__pycache__/
+.ipynb_checkpoints/

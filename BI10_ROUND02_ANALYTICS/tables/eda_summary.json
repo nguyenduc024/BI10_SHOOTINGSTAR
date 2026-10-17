@@ -1,0 +1,35 @@
+{
+  "coverage": {
+    "customers": 1000528,
+    "with_signed_contract": 818023,
+    "with_active_contract": 604586,
+    "with_valid_income": 1000439,
+    "with_any_call": 360661,
+    "with_lead": 645344,
+    "with_behaviour": 473086,
+    "app_users_2025": 70477,
+    "with_write_off": 13319
+  },
+  "cohort": {
+    "customers": 1000528,
+    "applied_in_tet_wave": 1000528,
+    "first_time_applicants_in_wave": 319311,
+    "first_time_share": 0.3191,
+    "monthly_applications_jun_nov_2024": 50096,
+    "monthly_applications_dec_jan": 613704,
+    "peak_multiple": 12.3
+  },
+  "tet_wave_risk": {
+    "first_loan_stress": 0.0439,
+    "repeat_loan_stress": 0.0209
+  },
+  "first_loans_in_wave": {
+    "count": 213457,
+    "no_prior_footprint": 166668,
+    "no_prior_footprint_share": 0.7808
+  },
+  "calls": {
+    "outbound_share": 0.9688,
+    "no_contact_share": 0.8946
+  }
+}
