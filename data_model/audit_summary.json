@@ -1,0 +1,91 @@
+{
+  "cutoff_exclusive": "2025-06-05",
+  "source_files": {
+    "CUSTOMER": {
+      "read_from": "BI10_ROUND02_DATASET/CUSTOMER.csv",
+      "sha256": "be283a0c0a5107239bf74a88bc83e4b1d02e1fdc1b679bba9d7b6df861b87e1d"
+    },
+    "CONTRACT": {
+      "read_from": "BI10_ROUND02_DATASET/CONTRACT.csv",
+      "sha256": "b86f54e8190822d9e46754fff14fd73b01b0de75d88f7f3f208bd61cc6b5d8ff"
+    },
+    "CALL": {
+      "read_from": "BI10_ROUND02_DATASET/CALL.csv",
+      "sha256": "161aee727226e4b4a6a173b4ee5ee64c77eb0e456e2a671f6c64aaafc16fc2b5"
+    },
+    "LEADS": {
+      "read_from": "BI10_ROUND02_DATASET/LEADS.csv",
+      "sha256": "b23d96520d40ffbd518864be89997dfbff3746f4d4d57c294d64cfc475179af3"
+    },
+    "PAST_BEHAVIOR": {
+      "read_from": "BI10_ROUND02_DATASET/PAST_BEHAVIOR.csv",
+      "sha256": "0f7e64d6183ef2f867cbabcf04b576ff92669b61ae557cd5e0976a937112ccd9"
+    }
+  },
+  "source_rows": {
+    "CUSTOMER": 1000528,
+    "CONTRACT": 6234093,
+    "CALL": 4000000,
+    "LEADS": 2143891,
+    "PAST_BEHAVIOR": 4412610
+  },
+  "call_key_duplicates": 0,
+  "credit_cases_spanning_customers": 0,
+  "unparseable_activity_timestamps": 0,
+  "cases_with_conflicting_core_fields": 0,
+  "signed_cases_without_sign_time": 218712,
+  "lead_accepted_sentinel_3000": 587914,
+  "lead_exact_duplicate_extra_rows": 39249,
+  "household_income_zero_rows": 6193831,
+  "contract": {
+    "source_rows": 6234093,
+    "credit_cases": 4280377,
+    "cases_with_placeholder_zero_income": 1953406,
+    "cases_with_genuine_income_conflict": 0,
+    "cases_with_income_above_200M": 377,
+    "cases_without_valid_income": 13922,
+    "signed_cases_without_sign_time": 218712,
+    "row_inflation": 1.456
+  },
+  "call_outcome_groups": {
+    "collection": 67537,
+    "no_contact": 3578524,
+    "other": 12864,
+    "retention": 11262,
+    "sales_conversion": 4536,
+    "sales_decline": 166144,
+    "sales_ineligible": 5665,
+    "sales_interest": 24087,
+    "service": 9941,
+    "wrong_party": 119440
+  },
+  "activity_ranges": {
+    "contract_apply": [
+      "2009-04-21 10:28:56",
+      "2025-06-04 22:29:02"
+    ],
+    "leads": [
+      "2019-10-09 11:16:52",
+      "2025-06-04 20:56:56"
+    ],
+    "behavior": [
+      "2022-12-01 00:05:29",
+      "2025-06-03 22:30:14"
+    ],
+    "calls": [
+      "2025-01-01 03:47:11",
+      "2026-08-31 23:11:28"
+    ]
+  },
+  "customer_360": {
+    "rows": 1000528,
+    "columns": 46
+  },
+  "data_model_files": {
+    "behavior.parquet": 22.3,
+    "calls.parquet": 58.5,
+    "contract_cases.parquet": 124.5,
+    "customers.parquet": 4.6,
+    "leads.parquet": 21.7
+  }
+}

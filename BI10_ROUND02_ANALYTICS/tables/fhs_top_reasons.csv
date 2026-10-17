@@ -1,0 +1,15 @@
+reason,customers,kind
+"No missed payments, 1-2 loans completed",228221,main drag
+"No missed payments, no loan completed yet (track record building)",138031,main drag
+1 past applications rejected or cancelled,113202,main drag
+Average down payment on goods/bike loans: <20%,90050,main drag
+1-2 credit applications in last 90 days,77355,main drag
+2-3 past applications rejected or cancelled,54229,main drag
+"Repayment history: Past due, cured",28597,main drag
+Largest loan repaid cleanly: <5M,16936,main drag
+0 credit applications in last 90 days,317086,main strength
+No missed payments across 3+ completed loans,285800,main strength
+Average down payment on goods/bike loans: >=40%,82253,main strength
+No goods/bike loan history (cash/revolving only),34647,main strength
+Largest loan repaid cleanly: >=15M,27233,main strength
+Last new loan signed: 1-3y ago,25249,main strength

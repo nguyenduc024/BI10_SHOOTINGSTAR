@@ -1,0 +1,10 @@
+feature,history_model_weight_pct,thin_model_weight_pct,pillar
+repay_state,55.2,,Repayment
+down_payment,15.7,,Affordability
+apps_90d,9.1,4.7,Credit seeking
+income,7.3,,Affordability
+recency,5.8,,Stability
+max_clean_credit,5.6,,Proven capacity
+tenure,1.2,,Stability
+unsigned_apps,,73.4,Credit seeking
+scoring_90d,,21.9,Credit seeking

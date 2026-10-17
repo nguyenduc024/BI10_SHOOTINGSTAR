@@ -1,0 +1,189 @@
+[23:48:29] label summary:
+                                      train  out_of_time
+customers                       557190.0000  727865.0000
+stress_rate                          0.0130       0.0316
+thin_file_share                      0.1205       0.3267
+stress_on_new_loans                  0.0075       0.0295
+stress_on_existing_instalments       0.0043       0.0020
+write_off_on_young_loans             0.0020       0.0007
+[23:48:29] Information Value:
+sample                        train     oot           pillar
+population feature                                          
+history    active_cash       0.0652  0.0031    Affordability
+           apps_90d          0.0504  0.0212   Credit seeking
+           down_payment      0.0168  0.0319    Affordability
+           due_recency       0.4416  0.1798        Repayment
+           income            0.0145  0.0024    Affordability
+           max_clean_credit  0.1176  0.0557  Proven capacity
+           n_active          0.0192  0.0012    Affordability
+           pti               0.0104  0.0071    Affordability
+           recency           0.0662  0.0151        Stability
+           rejected_12m      0.0097  0.0221   Credit seeking
+           repay_state       0.4945  0.2149        Repayment
+           scoring_90d       0.0024  0.0149   Credit seeking
+           tenure            0.0467  0.0461        Stability
+thin       apps_90d          0.0020  0.0039   Credit seeking
+           scoring_90d       0.0047  0.0214   Credit seeking
+           unsigned_apps     0.0168  0.0132   Credit seeking
+[23:48:30] [history] dropping pti: sign contradicts WoE
+[23:48:31] base points: history=67.1 thin=62.5
+[23:48:31] feature weights (% of points range):
+                  history_model_weight_pct  thin_model_weight_pct           pillar
+feature                                                                           
+repay_state                           55.2                    NaN        Repayment
+down_payment                          15.7                    NaN    Affordability
+apps_90d                               9.1                    4.7   Credit seeking
+income                                 7.3                    NaN    Affordability
+recency                                5.8                    NaN        Stability
+max_clean_credit                       5.6                    NaN  Proven capacity
+tenure                                 1.2                    NaN        Stability
+unsigned_apps                          NaN                   73.4   Credit seeking
+scoring_90d                            NaN                   21.9   Credit seeking
+[23:49:27] validation: {
+ "train_in_time": {
+  "n": 557190,
+  "event_rate": 0.013,
+  "auc": 0.6788,
+  "gini": 0.3577,
+  "ks": 0.2551
+ },
+ "oot": {
+  "n": 727865,
+  "event_rate": 0.0316,
+  "auc": 0.6288,
+  "gini": 0.2576,
+  "ks": 0.223
+ },
+ "oot_history_only": {
+  "n": 490105,
+  "event_rate": 0.0237,
+  "auc": 0.6114,
+  "gini": 0.2229,
+  "ks": 0.1573
+ },
+ "oot_thin_only": {
+  "n": 237760,
+  "event_rate": 0.0478,
+  "auc": 0.526,
+  "gini": 0.052,
+  "ks": 0.0516
+ },
+ "benchmark_repay_state_only": {
+  "n": 490105,
+  "event_rate": 0.0237,
+  "auc": 0.5997,
+  "gini": 0.1993,
+  "ks": 0.1309
+ },
+ "benchmark_gbm_same_features_history": {
+  "n": 490105,
+  "event_rate": 0.0237,
+  "auc": 0.6125,
+  "gini": 0.2249,
+  "ks": 0.1646
+ }
+}
+[23:49:42] live points (from fit window): {'ew': {'0': 0.0, '1': np.float64(-32.6), '2-3': np.float64(-46.4), '4+': np.float64(-67.5)}, 'affordability': np.float64(-4.4)}
+[23:49:44] live layer:
+{
+ "live_points": {
+  "ew": {
+   "0": 0.0,
+   "1": -32.6,
+   "2-3": -46.4,
+   "4+": -67.5
+  },
+  "affordability": -4.4
+ },
+ "live_logit_coefficients": {
+  "ew_1": 2.2582,
+  "ew_2-3": 3.2155,
+  "ew_4+": 4.6777,
+  "call_volume_16-30": 2.6805,
+  "call_volume_2-3": 0.1422,
+  "call_volume_31+": 2.9257,
+  "call_volume_4-7": 0.3099,
+  "call_volume_8-15": 1.9865,
+  "affordability": 0.3061
+ },
+ "fit_window": {
+  "customers": 318493,
+  "collection_rate": 0.0465,
+  "structural_only": 0.475,
+  "final_fhs": 0.6604,
+  "structural_only_volume_adjusted": 0.4682,
+  "final_fhs_volume_adjusted": 0.5796,
+  "collection_rate_by_ew": {
+   "0": 0.0309,
+   "1": 0.3777,
+   "2-3": 0.7144,
+   "4+": 0.9542
+  },
+  "collection_rate_by_affordability": {
+   "0": 0.0429,
+   "1": 0.0835
+  }
+ },
+ "validation_window": {
+  "customers": 326505,
+  "collection_rate": 0.0498,
+  "structural_only": 0.4741,
+  "final_fhs": 0.6698,
+  "structural_only_volume_adjusted": 0.4682,
+  "final_fhs_volume_adjusted": 0.5935,
+  "collection_rate_by_ew": {
+   "0": 0.0321,
+   "1": 0.3838,
+   "2-3": 0.6949,
+   "4+": 0.9499
+  },
+  "collection_rate_by_affordability": {
+   "0": 0.046,
+   "1": 0.0886
+  }
+ }
+}
+[23:49:44] validation window, collection by final band:
+            customers  any_collection  collection_share_of_calls  calls_per_customer
+band                                                                                
+A Thriving     101461          0.0352                     0.0110              4.6454
+B Healthy      122738          0.0302                     0.0091              4.4985
+C Stable        75400          0.0278                     0.0084              4.4541
+D Fragile       15061          0.1404                     0.0352              6.4384
+E Stressed      11845          0.4035                     0.0836             12.0841
+[23:49:47] selection paradox:
+          stress_rate_label_oot  any_collection_after_T  collection_share_after_T  called_after_T  customers_at_T
+n_active                                                                                                         
+0                        0.0234                  0.0547                    0.0122           57034          213012
+1                        0.0242                  0.0567                    0.0119          171621          406014
+2                        0.0244                  0.0854                    0.0177           84370          154640
+3+                       0.0198                  0.1257                    0.0271           28072           44357
+[23:49:49] bands:
+             n_oot  stress_rate_oot  score_min  score_max  share_oot  n_production  share_production  stress_lift_vs_A  future_collection_rate_validation_window
+band                                                                                                                                                            
+A Thriving  169570           0.0159       75.1       93.9     0.2330        223717            0.2236            1.0000                                    0.0352
+B Healthy   202363           0.0216       65.1       75.0     0.2780        331452            0.3313            1.3594                                    0.0302
+C Stable    332341           0.0420       55.1       65.0     0.4566        364963            0.3648            2.6376                                    0.0278
+D Fragile    19886           0.0681       40.2       55.0     0.0273         42954            0.0429            4.2794                                    0.1404
+E Stressed    3705           0.1603        8.3       40.0     0.0051         37442            0.0374           10.0764                                    0.4035
+[23:49:52] fairness:
+dimension  group      n  avg_score  actual_stress_rate  auc_within_group
+   GENDER Female 378262    67.8414              0.0254            0.6191
+   GENDER   Male 349602    68.3823              0.0382            0.6393
+ age_band  25-34 228249    68.5288              0.0263            0.6154
+ age_band  35-44 246139    68.9913              0.0256            0.6264
+ age_band  45-54 131846    68.6216              0.0302            0.6321
+ age_band    55+  37277    67.8120              0.0378            0.6187
+ age_band    <25  84354    63.6608              0.0626            0.5208
+[23:50:29] segments:
+  fhs_segment  customers  avg_score  expected_stress  live_loans  share  called_after_T  collection_rate_after_T  collection_share_after_T
+   Distressed      25637    21.9767           0.1600      0.6969 0.0256            2705                   0.0843                    0.0164
+      Fragile      31558    47.2069           0.0681      0.7958 0.0315            8615                   0.0843                    0.0190
+      Healthy     310439    69.9950           0.0216      0.8981 0.3103          119710                   0.0429                    0.0095
+ Live arrears      11751    33.2516           0.1287      1.4524 0.0117           11406                   0.6300                    0.1122
+New to credit     182114    58.9431           0.0422      0.0000 0.1820           10325                   0.0637                    0.0149
+Over-extended      47030    66.1635           0.0325      2.8739 0.0470           29284                   0.0875                    0.0200
+       Stable     173619    61.9770           0.0420      1.0440 0.1735           65303                   0.0364                    0.0079
+     Stressed       3568    36.7731           0.1603      0.6749 0.0036             636                   0.1305                    0.0310
+     Thriving     214812    79.3498           0.0159      0.8921 0.2147          103808                   0.0530                    0.0122
+[23:50:37] done in 137s
