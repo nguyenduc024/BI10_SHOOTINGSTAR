@@ -1,0 +1,31 @@
+{
+  "name": "BI10",
+  "colors": {
+    "navy": "#16324F",
+    "blue": "#0072B2",
+    "teal": "#009E73",
+    "orange": "#D55E00",
+    "gold": "#E69F00",
+    "slate": "#667085",
+    "grid": "#D8E1E8",
+    "text": "#1F2933",
+    "muted": "#667085",
+    "surface": "#FFFFFF",
+    "context": "#C3CAD4"
+  },
+  "health_bands": {
+    "Stressed": "#D55E00",
+    "Watchlist": "#E69F00",
+    "Stable": "#0072B2",
+    "Healthy": "#009E73",
+    "No credit history": "#667085"
+  },
+  "engagement_bands": {
+    "Dormant": "#D55E00",
+    "Low": "#E69F00",
+    "Moderate": "#0072B2",
+    "High": "#009E73",
+    "Very high": "#16324F"
+  },
+  "categorical": ["#16324F", "#0072B2", "#009E73", "#E69F00", "#D55E00", "#667085", "#C3CAD4"]
+}
