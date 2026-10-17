@@ -1,0 +1,16 @@
+factor,score_input,spearman_with_engagement,forward_auc_dial_adjusted,iv_forward_answer,iv_band,effect_on_future_engagement
+Days since last customer touchpoint,True,-0.7335915241761733,0.46436933049198426,0.029439417927913616,weak,reduces
+"Application / scoring events, 90d",True,0.5787004450796884,0.4878176356482327,0.0014915768064260614,unpredictive,reduces
+Signed credit amount (lifetime),True,0.819655520828803,0.5122398526154578,0.003284397326634599,unpredictive,raises
+Answered calls net of refusals,True,0.3296196144483313,0.5992137317670262,0.19491550132526497,medium,raises
+Accepted lead offers,True,0.27269002431414885,0.5002430569339434,0.00016693983742614515,unpredictive,raises
+Products applied for,True,0.6829313562858689,0.49936947271160553,0.00048087110379754804,unpredictive,reduces
+Inbound calls before cutoff,False,0.11730277481585116,0.5064340503546535,0.0013363068185758746,unpredictive,raises
+Refused calls before cutoff,False,0.17916881502771756,0.5209209266478697,0.008005047607905583,unpredictive,raises
+Not-interested lead outcomes,False,0.33715612240316756,0.5177058179004611,0.0011823155831275514,unpredictive,raises
+"Company calls placed, 90d",False,0.3977002511318186,0.5208017478762329,0.19961516414553765,medium,raises
+"Lead records, 90d",False,0.15044657994595198,0.5043594762424439,0.0011113571660215826,unpredictive,raises
+App sessions per week (2025),False,0.10801228403848888,0.5010715252847051,0.0006961370569079988,unpredictive,raises
+Latest action self-service digital,False,0.2853691364700186,0.4773666482262197,0.005077735221841777,unpredictive,reduces
+"Products explored in scoring, 90d",False,0.5769302281243405,0.4913691225298801,0.00028505925594909026,unpredictive,reduces
+Rejected applications (lifetime),False,-0.0563067725021771,0.4948543611764699,0.0017748150868191195,unpredictive,reduces

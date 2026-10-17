@@ -1,0 +1,79 @@
+{
+  "cutoff_exclusive": "2025-06-05",
+  "reference_date": "2025-06-04",
+  "window_start": "2025-03-07",
+  "call_data_start": "2025-01-01",
+  "self_lead_sources": [
+    "GMA",
+    "LANDING PAGE",
+    "SOB"
+  ],
+  "coding": {
+    "R": "mid-rank quintiles among dated customers (Hughes 1994 origin)",
+    "F/M/I/L/P": "zero -> 1, positives mid-rank quartiles -> 2..5"
+  },
+  "weights": {
+    "D-CRITIC (primary)": {
+      "R": 0.21446987795908964,
+      "F": 0.16467526272925243,
+      "M": 0.2472588544807511,
+      "I": 0.14275035482921417,
+      "L": 0.10434334891253726,
+      "P": 0.12650230108915536
+    },
+    "CRITIC (Pearson)": {
+      "R": 0.21660269925042167,
+      "F": 0.16582787333023613,
+      "M": 0.24503530334755477,
+      "I": 0.1430994692475783,
+      "L": 0.10463304184825217,
+      "P": 0.124801612975957
+    },
+    "Equal weights": {
+      "R": 0.16666666666666666,
+      "F": 0.16666666666666666,
+      "M": 0.16666666666666666,
+      "I": 0.16666666666666666,
+      "L": 0.16666666666666666,
+      "P": 0.16666666666666666
+    }
+  },
+  "weights_reference": "Krishnan et al. (2021) D-CRITIC; JRC (2019) 10-step guide",
+  "segment_grid": [
+    "Champions",
+    "Can't Lose Them",
+    "At Risk",
+    "Loyal",
+    "New / Recent",
+    "Promising",
+    "Potential Loyalist",
+    "Need Attention",
+    "About to Sleep",
+    "Hibernating",
+    "Lost"
+  ],
+  "tiers": {
+    "Champions": "Highly engaged",
+    "Loyal": "Highly engaged",
+    "Potential Loyalist": "Growing",
+    "New / Recent": "Growing",
+    "Promising": "Growing",
+    "Need Attention": "Cooling",
+    "About to Sleep": "Cooling",
+    "At Risk": "Slipping high-value",
+    "Can't Lose Them": "Slipping high-value",
+    "Hibernating": "Dormant",
+    "Lost": "Dormant"
+  },
+  "validation": {
+    "design": "out-of-time, forward call outcomes",
+    "strata": "post-cutoff x pre-cutoff call volume, ten mid-rank bins each",
+    "bootstrap": {
+      "replicates": 200,
+      "seed": 20251018,
+      "type": "paired Poisson"
+    }
+  },
+  "iv_bands_reference": "Siddiqi (2017)",
+  "source_sha256": "6c48fc813a5927cf0141dca60c3c2de5885d05392466d6f6d74d9b9fadc3bc56"
+}

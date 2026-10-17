@@ -1,0 +1,7 @@
+touchpoint,class,customers,share
+Application / scoring event,customer-side,473086,0.47283634241120687
+Answered call (net of refusals),customer-side,71550,0.07151224153646875
+Accepted or self-initiated lead,customer-side,74656,0.0746166024339149
+Inbound call,customer-side,23418,0.02340564182111845
+Called by the company,company effort,300978,0.30081916747957077
+Any lead record,lead record,645344,0.6450034381846385

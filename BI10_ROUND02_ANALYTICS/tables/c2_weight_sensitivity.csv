@@ -1,0 +1,4 @@
+scheme_a,scheme_b,spearman,mean_abs_diff
+D-CRITIC (primary),CRITIC (Pearson),0.9999848993834485,0.16626113457603994
+D-CRITIC (primary),Equal weights,0.9960141050988869,3.0768821106910655
+CRITIC (Pearson),Equal weights,0.9960435862921877,2.997595341548052

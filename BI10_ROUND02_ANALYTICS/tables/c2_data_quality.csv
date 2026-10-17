@@ -1,0 +1,29 @@
+check,value,passed,hard_rule
+one row per customer,"1,000,528 rows / 1,000,528 ids",True,True
+calls <= calls_all,0,True,True
+answered <= answered_all,0,True,True
+inbound <= inbound_all,0,True,True
+refused <= refused_all,0,True,True
+calls_90d <= calls,0,True,True
+leads_90d <= leads,0,True,True
+lead_deals_90d <= lead_deals,0,True,True
+lead_deals <= leads,0,True,True
+behavior_events_90d <= behavior_events,0,True,True
+last_call_at before cutoff,2025-06-04 22:15:51,True,True
+last_lead_at before cutoff,2025-06-04 20:56:56,True,True
+last_behavior_at before cutoff,2025-06-03 22:30:14,True,True
+last_application_at before cutoff,2025-06-04 22:29:02,True,True
+last_signed_at before cutoff,2025-06-04 22:29:47,True,True
+refusals coded without a system ANSWER (customers),780,True,False
+customers with calls after the cutoff,351792,True,False
+ambiguous latest behaviour action (customers),501,True,False
+leads with SOB acceptance sentinel 3000-01-01,587914,True,False
+customers with any app session in 2025,70477,True,False
+answered-call dates bounded by call-log start,49131,True,False
+recent Deal dates bounded by window start,1062,True,False
+customer-side evidence without recoverable date,2694,True,False
+exact discrete dCor equals brute force (max abs gap),5.55e-16,True,True
+"engagement score within [0, 100]",0.0–100.0,True,True
+every customer matched by the segment grid,0,True,True
+strata for answered a call after cutoff,70,True,False
+strata for inbound call after cutoff,20,True,False
