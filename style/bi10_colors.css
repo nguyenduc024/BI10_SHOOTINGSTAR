@@ -1,0 +1,28 @@
+/* BI10 colour palette for HTML dashboards and prototypes. */
+:root {
+  --bi-navy: #16324F;
+  --bi-blue: #0072B2;
+  --bi-teal: #009E73;
+  --bi-orange: #D55E00;
+  --bi-gold: #E69F00;
+  --bi-slate: #667085;
+  --bi-grid: #D8E1E8;
+  --bi-text: #1F2933;
+  --bi-muted: #667085;
+  --bi-surface: #FFFFFF;
+  --bi-context: #C3CAD4;
+
+  /* Financial Health bands */
+  --bi-health-stressed: var(--bi-orange);
+  --bi-health-watchlist: var(--bi-gold);
+  --bi-health-stable: var(--bi-blue);
+  --bi-health-healthy: var(--bi-teal);
+  --bi-health-no-history: var(--bi-slate);
+
+  /* Engagement bands */
+  --bi-eng-dormant: var(--bi-orange);
+  --bi-eng-low: var(--bi-gold);
+  --bi-eng-moderate: var(--bi-blue);
+  --bi-eng-high: var(--bi-teal);
+  --bi-eng-very-high: var(--bi-navy);
+}
